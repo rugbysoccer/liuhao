@@ -1,0 +1,14 @@
+server:
+  port: 9005
+spring:
+  application:
+    name: springcloud-config-server
+  cloud:
+    config:
+      server:
+        get:
+          uri: https://github.com/rugbysoccer/liuhao.git
+          search-paths: /demo-config-server/src/main/resources/
+          username: liuhao
+          password: liuhao666666
+
